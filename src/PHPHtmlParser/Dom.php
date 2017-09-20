@@ -2,6 +2,7 @@
 namespace PHPHtmlParser;
 
 use PHPHtmlParser\Dom\AbstractNode;
+use PHPHtmlParser\Dom\Collection;
 use PHPHtmlParser\Dom\HtmlNode;
 use PHPHtmlParser\Dom\TextNode;
 use PHPHtmlParser\Exceptions\NotLoadedException;
@@ -210,7 +211,7 @@ class Dom
      *
      * @param string $selector
      * @param int $nth
-     * @return array
+     * @return Collection
      */
     public function find($selector, $nth = null)
     {
